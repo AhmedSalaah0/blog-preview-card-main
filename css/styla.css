@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgba(245, 211, 75, 0.925);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,7 +7,7 @@ body{
     border: 1px solid black;
     width: 450px;
     height: 600px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     border-radius: 20px;
     background-color: white;
     margin: 20px auto;
@@ -16,7 +16,7 @@ body{
 }
 
 .parent:hover {
-    box-shadow: 7px 7px 0 black;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 1);
 }
 
 .main {
@@ -27,40 +27,42 @@ body{
     border-radius: 15px;
 }
 
-.parent .word{
+.parent .word {
     background-color: rgba(245, 211, 75);
     padding: 6px;
     border-radius: 5px;
     width: 70px;
-    margin-left: 25px;
     margin-top: 25px;
-    font-weight:600;
+    font-weight: 600;
     display: block;
 
 }
 
-.history {
-    margin-left: 25px;
-}
-
 .words {
     opacity: 0.5;
-    margin-left: 25px;
     line-height: 1.4;
     width: 350px;
 }
 
 .parent .in {
-    margin-left: 25px;
-    display: block;
-    width: 500px;
-    color: rgba(245, 211, 75);
+    display: inline-block;
     font-weight: bold;
     margin-bottom: 15px;
+    cursor: pointer;
     font-size: 25px;
+    transition: all 0.5s 0s;
 }
 
-.name{
+.parent .in:hover {
+        color: rgba(245, 211, 75);
+
+}
+
+.m-div {
+    margin-left: 25px;
+}
+
+.name {
     display: flex;
     margin-top: 20px;
 }
@@ -68,19 +70,25 @@ body{
 .name img {
     width: 30px;
     display: inline-block;
-    margin-left: 25px;
     padding-right: 10px;
 }
 
 .name span {
-padding-top: 5px;
+    padding-top: 5px;
 }
 
 .attribution {
     margin-top: 20px;
     font-size: 13px;
+    opacity: 0.7;
 }
 
 a {
     text-decoration: none;
+    transition: all 0.5s 0s;
+    
+}
+
+a:hover {
+    color:rgba(245, 211, 75, 0.925);
 }
